@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="com.example.exercise9.CalculatorController"
+          xmlns:fx="http://javafx.com/fxml" alignment="CENTER" style="-fx-vgap: 10; -fx-hgap: 10; -fx-padding: 50; -fx-font-size: 16px;">
+    <Button GridPane.rowIndex="0" GridPane.columnIndex="0" text="/" onAction="#divideBtn" style="-fx-pref-width: 150; -fx-pref-height: 40;" />
+    <Button GridPane.rowIndex="0" GridPane.columnIndex="1" text="*" onAction="#multiplyBtn" style="-fx-pref-width: 150; -fx-pref-height: 40;" />
+    <Button GridPane.rowIndex="1" GridPane.columnIndex="0" text="+" onAction="#addBtn" style="-fx-pref-width: 150; -fx-pref-height: 40;" />
+    <Button GridPane.rowIndex="1" GridPane.columnIndex="1" text="-" onAction="#subtractBtn" style="-fx-pref-width: 150; -fx-pref-height: 40;" />
+
+    <TextField fx:id="numFiled1" promptText="number1" GridPane.rowIndex="2" GridPane.columnIndex="0" style="-fx-pref-width: 150; -fx-pref-height: 40;" />
+    <TextField fx:id="numFiled2" promptText="number2" GridPane.rowIndex="2" GridPane.columnIndex="1" style="-fx-pref-width: 150; -fx-pref-height: 40;" />
+
+    <Text fx:id="result" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" />
+
+    <Button GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.columnSpan="2" text="clear" onAction="#clearBtn" style="-fx-pref-width: 310; -fx-pref-height: 40;" />
+</GridPane>
+
