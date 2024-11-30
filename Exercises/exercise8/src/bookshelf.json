@@ -1,0 +1,22 @@
+{
+  "bookshelf": [
+    {
+      "title": "Introduction to Algorithms",
+      "publishedYear": 2009,
+      "numberOfPages": 1312,
+      "authors": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein"
+    },
+    {
+      "title": "Algorithms",
+      "publishedYear": 2011,
+      "numberOfPages": 1024,
+      "authors": "Robert Sedgewick, Kevin Wayne"
+    },
+    {
+      "title": "The Algorithm Design Manual",
+      "publishedYear": 2009,
+      "numberOfPages": 700,
+      "authors": "Steven S. Skiena"
+    }
+  ]
+}
