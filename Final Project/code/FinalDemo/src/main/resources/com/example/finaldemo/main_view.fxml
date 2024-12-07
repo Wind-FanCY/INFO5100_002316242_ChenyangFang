@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.finaldemo.ImageDisplayController"
+      spacing="20"
+      alignment="CENTER"
+      >
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- Upload Section -->
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Upload Images"
+                onAction="#handleImageUpload"
+                styleClass="btn-primary"/>
+
+        <ComboBox fx:id="formatComboBox"
+                  promptText="Select Conversion Format"
+                  styleClass="combo-box"/>
+
+        <Button text="Convert Images"
+                onAction="#handleImageConversion"
+                styleClass="btn-secondary"/>
+    </HBox>
+
+    <!-- Image Display Area -->
+    <HBox spacing="20" VBox.vgrow="ALWAYS">
+        <!-- Thumbnail List -->
+        <VBox spacing="5" HBox.hgrow="SOMETIMES">
+            <Label text="Uploaded Images" styleClass="section-header"/>
+            <ListView fx:id="thumbnailListView"
+                      styleClass="thumbnail-list"
+                      prefHeight="200"/>
+        </VBox>
+
+        <!-- Image Preview and Details -->
+        <VBox spacing="5" HBox.hgrow="SOMETIMES">
+            <Label text="Image Preview" styleClass="section-header"/>
+            <ImageView fx:id="previewImageView"
+                       fitWidth="100"
+                       fitHeight="100"
+                       preserveRatio="true"
+                       styleClass="image-preview"/>
+
+            <!-- Image Properties -->
+            <VBox fx:id="propertiesContainer" spacing="5" style="-fx-padding: 10px 0 0 0;">
+                <Label fx:id="fileNameLabel" styleClass="property-label"/>
+                <Label fx:id="fileSizeLabel" styleClass="property-label"/>
+                <Label fx:id="dimensionsLabel" styleClass="property-label"/>
+                <Label fx:id="fileTimeLabel" styleClass="property-label"/>
+                <Label fx:id="filePathLabel" styleClass="property-label" />
+            </VBox>
+        </VBox>
+    </HBox>
+</VBox>
