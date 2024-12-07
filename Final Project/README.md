@@ -29,3 +29,6 @@ cd INFO5100_002316242_ChenyangFang/Final\ Project/
 3. Build with IDEA
 
 4. Run `ImageManagementApp`
+
+## Video Link
+https://www.youtube.com/watch?v=hNPxIyWDeNM
